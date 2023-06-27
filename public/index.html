@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Emilie Vedel</title>
+    <!--<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">-->
+
+    <script type="application/ld+json" class="schemantra">{
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "Person",
+      "name": "Emilie Vedel",
+      "url": "https://emilievedel.dk/",
+      "telephone": "+45 29 65 54 82",
+      "sameAs": "[https://www.instagram.com/emiliemig/,https://www.linkedin.com/in/emilievedel/]",
+      "email": "emilie@emilievedel.dk"
+    }</script>
+  </head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    @font-face {
+      font-display: swap;
+      font-family: 'Great Vibes';
+      font-style: normal;
+      font-weight: 400;
+      src: url('fonts/great-vibes-regular.woff2') format('woff2'),
+           url('fonts/great-vibes-regular.woff') format('woff');
+    }
+
+    @font-face {
+      font-display: swap;
+      font-family: 'Clear Sans';
+      font-weight: normal;
+      font-style: 400;
+      src: url('fonts/clear-sans.woff2') format('woff2'),
+           url('fonts/clear-sans.woff') format('woff');
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Clear Sans', sans-serif;
+      color: white;
+
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 1rem;
+
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+
+      text-rendering: optimizelegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-family: 'Great Vibes', cursive;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .profile {
+      display: grid;
+      grid-template-columns: 50% 40%;
+      place-items: center;
+      max-width: 600px;
+    }
+
+    .photo {
+      display: grid;
+      place-items: center;
+    }
+
+    .photo__img {
+      border-radius: 50%;
+      width: 100%;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .info__name, .info__items {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    li {
+      padding: .3rem 0;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .profile {
+        grid-template-columns: auto;
+      }
+
+      .photo__img {
+        width: 50%;
+      }
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+  </style>
+
+  <body>
+      <div class="profile">
+        <figure class="photo">
+          <img class="photo__img" alt="Emilie Vedel" src="images/emilie-vedel.jpg">
+        </figure>
+        <div class="info">
+          <h1 class="info__name">Emilie Vedel</h1>
+          <ul class="fa-ul info__items">
+            <li><span class="fa-li"><i class="fa-solid fa-phone"></i></i></span><a href="tel:+45 29 65 54 82">+45 29 65 54 82</a></li>
+            <li><span class="fa-li"><i class="fa-regular fa-envelope"></i></span><a href="mailto:emilie@emilievedel.dk">emilie@emilievedel.dk</a></li>
+            <li><span class="fa-li"><i class="fa-brands fa-instagram"></i></span><a href="https://www.instagram.com/emiliemig/">@emiliemig</a></li>
+            <li><span class="fa-li"><i class="fa-brands fa-linkedin"></i></span><a href="https://www.linkedin.com/in/emilievedel/">@EmilieVedel</a></li>
+          </ul>
+        </div>
+      </div>
+  </body>
+</html>
